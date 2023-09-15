@@ -1,1 +1,62 @@
+@font-face { /* Learned from https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website */
+	font-family: FuturaBold;
+	src: url("Futura PT Bold.ttf");
+}
 
+body { /* Help from online forum https://css-tricks.com/forums/topic/zero-margin-images/ */
+	margin: 0;
+	padding: 0;
+	/*background: url("tvglitchbg.jpg"); */
+}
+
+/* Learned from https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade */
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.overlay { 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 100px;
+  font-family: 'FuturaBold';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#titleheader {
+	font-family: 'FuturaBold';
+	font-size: 50px;
+	text-align: center;
+}
+
+#description {
+	font-family: 'FuturaBold';
+	font-size: 50px;
+	text-align: center;
+}
