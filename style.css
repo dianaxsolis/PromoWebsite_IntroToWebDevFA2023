@@ -59,4 +59,39 @@ body { /* Help from online forum https://css-tricks.com/forums/topic/zero-margin
 	font-family: 'FuturaBold';
 	font-size: 50px;
 	text-align: center;
+	color: darkorange;
+}
+
+.photoGrid { /* Learned from https://ehtmlu.com/blog/simple-css-image-grid/ b/c w3 made it more complicated */
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	background-color: black;
+}
+
+#liveVideoTitle {
+	font-family: 'FuturaBold';
+	font-size: 50px;
+	text-align: center;
+	color: palevioletred;
+}
+
+/* Wanted to learn how to make a YouTube vid full-screen - https://stackoverflow.com/questions/36949747/make-video-fit-100-with-any-screen-resolution */
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+#jimmyfallon {
+	min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
 }
