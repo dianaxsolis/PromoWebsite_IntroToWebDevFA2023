@@ -1,3 +1,5 @@
+/* This is Why - Paramore Promo Website - CSS */
+
 @font-face { /* Learned from https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website */
 	font-family: FuturaBold;
 	src: url("Futura PT Bold.ttf");
@@ -9,9 +11,10 @@ body { /* Help from online forum https://css-tricks.com/forums/topic/zero-margin
 	/*background: url("tvglitchbg.jpg"); */
 }
 
+/* Asked to create a large image or heading - Wanted to create an overlay image with the font that is used for their album*/
 /* Learned from https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade */
 .container{
-	position: relative;
+	position: relative; /* Allows for it to be an element - block so that it can connect to overlay */
 	width: 100%;
 	height: 100%;
 }
@@ -37,7 +40,7 @@ body { /* Help from online forum https://css-tricks.com/forums/topic/zero-margin
 .container:hover .overlay {
 	opacity: 1;
 }
-
+ /* This is the overlay text and the actions needed for it to appear */
 .text {
   color: white;
   font-size: 100px;
@@ -48,6 +51,9 @@ body { /* Help from online forum https://css-tricks.com/forums/topic/zero-margin
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+/* Using ID's for header is the best way for me to organize 
+https://www.w3schools.com/html/html_id.asp*/
 
 #titleheader {
 	font-family: 'FuturaBold';
@@ -62,10 +68,12 @@ body { /* Help from online forum https://css-tricks.com/forums/topic/zero-margin
 	color: darkorange;
 }
 
+/* Wanted to highlight Paramore's music videos using stills - a grid was the best way to display this */
+
 .photoGrid { /* Learned from https://ehtmlu.com/blog/simple-css-image-grid/ b/c w3 made it more complicated */
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr); /* 3 columns */
 	background-color: black;
 }
 
@@ -87,11 +95,11 @@ body { /* Help from online forum https://css-tricks.com/forums/topic/zero-margin
 #jimmyfallon {
 	min-width: 100%; 
   min-height: 100%; 
-
-  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
   width: auto;
   height: auto;
 
-  /* Center the video */
+  /* Centers the video */
   position: absolute;
 }
+
+/* END */
